@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Define the library
 add_library(serial-port-lib
-    src/serialport.cpp
+    src/serialPort.cpp
 )
 
 # Add include directories so the library's headers are accessible
