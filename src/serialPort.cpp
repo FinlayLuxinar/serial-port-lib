@@ -216,7 +216,7 @@ bool SerialPort::waitForResponse(int32_t timeout_ms) {
         auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(now - start);
         if (elapsed.count() > timeout_ms) {
             std::cout << "DEBUG: Timeout waiting for response to command: " << currentCommand << std::endl;
-            return;
+            return false;
         }
     }
 
